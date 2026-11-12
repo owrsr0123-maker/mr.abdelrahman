@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="عبدالرحمن الهويدي - شرح مبسط للدراسات، متابعة مستمرة، ومساعدة الطلاب على تحقيق أفضل النتائج.">
+  <title>عبدالرحمن الهويدي | مدرس دراسات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+     <style>
+      :root {
+      --navy: #102b43;
+      --navy-2: #173c5b;
+      --gold: #f6bd4e;
+      --gold-dark: #e5a72f;
+      --ink: #16324a;
+      --muted: #607286;
+      --paper: #f5f8fb;
+      --white: #fff;
+      --border: #dce5ed;
+      --shadow: 0 12px 32px rgba(16, 43, 67, .09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Cairo", Tahoma, sans-serif; color: var(--ink); background: var(--white); line-height: 1.8; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; }
+    .container { width: min(1160px, calc(100% - 40px)); margin-inline: auto; }
+    .topbar { background: #0c2235; color: white; border-bottom: 1px solid rgba(255,255,255,.12); position: sticky; top: 0; z-index: 20; }
+    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; line-height: 1.35; white-space: nowrap; }
+    .brand-mark { display: grid; place-items: center; width: 45px; height: 45px; border-radius: 13px; background: var(--gold); color: var(--navy); font-size: 24px; }
+    .brand small { display: block; font-size: 11px; color: #d1dce5; font-weight: 500; }
+    .nav-links { display: flex; align-items: center; gap: clamp(12px, 2.1vw, 28px); font-size: 13px; color: #e6edf3; }
+    .nav-links a:hover { color: var(--gold); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; cursor: pointer; padding: 12px 22px; border-radius: 12px; font-weight: 800; transition: .2s ease; }
+    .btn-gold { background: var(--gold); color: var(--navy); box-shadow: 0 5px 0 rgba(181,120,19,.12); }
+    .btn-gold:hover { background: #ffd174; transform: translateY(-2px); }
+    .btn-navy { background: var(--navy-2); color: white; }
+    .btn-navy:hover { background: #245477; }
+    .hero { color: white; background: radial-gradient(circle at 15% 20%, #244763 0, transparent 35%), linear-gradient(115deg, #10283d, #0d2134); overflow: hidden; position: relative; }
+    .hero::after { content: "✦"; position: absolute; left: 7%; bottom: 8%; font-size: 170px; color: rgba(246,189,78,.08); transform: rotate(15deg); pointer-events: none; }
+    .hero-grid { display: grid; grid-template-columns: 1.03fr .97fr; align-items: center; gap: 42px; min-height: 470px; padding-block: 55px; position: relative; z-index: 1; }
+    .eyebrow { color: var(--gold); font-weight: 700; margin: 0 0 10px; }
+    h1 { font-size: clamp(34px, 4.2vw, 56px); line-height: 1.25; margin: 0 0 18px; font-weight: 800; }
+    .hero p { color: #e0e8ef; max-width: 600px; margin: 0 0 25px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 32px; }
+    .stat { text-align: center; padding: 10px 5px; border-left: 1px solid rgba(255,255,255,.2); font-size: 12px; color: #e5edf4; }
+    .stat:last-child { border-left: 0; }
+    .stat span { display: block; font-size: 24px; color: var(--gold); margin-bottom: 3px; }
+    .hero-visual { min-height: 340px; border-radius: 24px; background: linear-gradient(140deg, rgba(255,255,255,.1), rgba(255,255,255,.02)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1100&q=85') center/cover; box-shadow: 0 24px 60px rgba(0,0,0,.25); position: relative; border: 1px solid rgba(255,255,255,.16); }
+    .hero-visual::after { content: "التعلّم يبدأ بفهم الفكرة"; position: absolute; bottom: 18px; right: 18px; left: 18px; padding: 15px 18px; border-radius: 14px; background: rgba(12,34,53,.88); color: white; font-weight: 700; backdrop-filter: blur(8px); }
+    section { padding: 72px 0; }
+    .section-heading { text-align: center; margin-bottom: 34px; }
+    .section-heading h2 { font-size: clamp(25px, 3vw, 34px); margin: 0 0 8px; color: var(--navy); }
+    .section-heading p { color: var(--muted); margin: 0; }
+    .section-heading::after { content: ""; display: block; width: 46px; height: 4px; background: var(--gold); border-radius: 4px; margin: 14px auto 0; }
+    .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 42px; align-items: center; }
+    .about-image { min-height: 330px; border-radius: 20px; background: url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1000&q=85') center/cover; box-shadow: var(--shadow); }
+    .about-copy h2 { margin: 0 0 14px; font-size: 30px; }
+    .about-copy p { color: var(--muted); }
+    .feature-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 24px; }
+    .feature-card, .subject-card, .review-card { background: white; border: 1px solid var(--border); border-radius: 15px; padding: 23px 18px; box-shadow: 0 5px 18px rgba(16,43,67,.035); }
+    .feature-card { text-align: center; }
+    .feature-icon { width: 54px; height: 54px; display: grid; place-items: center; margin: 0 auto 12px; background: #eaf2fa; color: var(--navy-2); border-radius: 50%; font-size: 25px; }
+    .feature-card h3, .subject-card h3 { margin: 0 0 7px; font-size: 17px; }
+    .feature-card p, .subject-card p { margin: 0; color: var(--muted); font-size: 13px; }
+    .subjects { background: var(--paper); }
+    .subject-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .subject-card { text-align: center; transition: .2s ease; }
+    .subject-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .subject-card .feature-icon { background: #fff1d5; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .review-card { padding: 22px; }
+    .review-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+    .review-top strong { font-size: 16px; }
+    .stars { color: #efa91f; letter-spacing: 2px; }
+    .review-card p { color: var(--muted); font-size: 14px; margin-bottom: 0; }
+    .contact { background: linear-gradient(120deg, #10283d, #163b58); color: white; }
+    .contact .section-heading h2 { color: white; }
+    .contact .section-heading p { color: #d0dce5; }
+    .contact-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 28px; align-items: start; }
+    .contact-info { display: grid; gap: 14px; }
+    .contact-item { display: flex; align-items: center; gap: 14px; padding: 15px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.05); border-radius: 13px; }
+    .contact-item span { font-size: 24px; }
+    .contact-item small { display: block; color: #c9d6e0; }
+    .contact-form { background: white; color: var(--ink); padding: 25px; border-radius: 18px; }
+    .contact-form h3 { margin: 0 0 15px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    input, textarea, select { width: 100%; border: 1px solid var(--border); border-radius: 10px; padding: 12px 13px; margin-bottom: 12px; background: #fbfdff; outline: none; }
+    input:focus, textarea:focus, select:focus { border-color: #7197b7; box-shadow: 0 0 0 3px rgba(23,60,91,.08); }
+    textarea { min-height: 100px; resize: vertical; }
+    .contact-form .btn { width: 100%; }
+    .form-note { color: var(--muted); font-size: 12px; margin: 10px 0 0; }
+    footer { background: #0a1e2e; color: #d5e0e8; padding: 20px 0; font-size: 13px; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .whatsapp-float { position: fixed; bottom: 20px; left: 20px; z-index: 15; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; color: white; background: #1dbb67; box-shadow: 0 8px 22px rgba(0,0,0,.2); font-size: 27px; }
+    @media (max-width: 900px) {
+      .nav { flex-wrap: wrap; padding-block: 12px; }
+      .nav-links { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; padding-bottom: 5px; }
+      .nav > .btn { padding: 9px 13px; font-size: 12px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 28px; padding-block: 42px; }
+      .hero-visual { min-height: 280px; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .about-image { min-height: 260px; }
+      .feature-grid, .subject-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 540px) {
+      .container { width: min(100% - 28px, 1160px); }
+      .brand { font-size: 14px; }
+      .brand-mark { width: 39px; height: 39px; }
+      .nav-links { gap: 12px; font-size: 12px; }
+      h1 { font-size: 34px; }
+      .hero-stats { grid-template-columns: repeat(2, 1fr); }
+      .stat:nth-child(2) { border-left: 0; }
+      section { padding: 52px 0; }
+      .feature-grid, .subject-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .feature-card, .subject-card { padding: 18px 12px; }
+      .form-row { grid-template-columns: 1fr; gap: 0; }
+    }
+    *{
+      transform: perspective(2px);
+      transition: 1s;
+    }
+     </style>
+
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="الصفحة الرئيسية">
+        <span class="brand-mark">✦</span>
+        <span>عبدالرحمن هويدي<small>مدرس الدراسات الاجتماعية</small></span>
+      </a>
+      <nav class="nav-links" aria-label="القائمة الرئيسية">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">عن المدرس</a>
+        <a href="#subjects">المواد الدراسية</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+      <a class="btn btn-gold" href="#contact">▣ احجز حصتك الآن</a>
+    </div>
+  </header>
+
+  
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">مع عبدالرحمن هويدي</p>
+          <h1>افهم بعمق..<br>وحقق درجات أعلى</h1>
+          <p>شرح مبسط ومنظم للدراسات الاجتماعية، مع تدريب عملي ومتابعة مستمرة تساعدك على فهم المنهج والاستعداد للامتحانات بثقة.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#contact">▣ احجز حصتك الآن</a>
+            <a class="btn btn-navy" href="#about">اعرف المزيد ←</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span>✓</span>شرح مبسط ومفهوم</div>
+            <div class="stat"><span>◷</span>متابعة مستمرة</div>
+            <div class="stat"><span>◎</span>تدريب على الامتحانات</div>
+            <div class="stat"><span>★</span>خطوة نحو التفوق</div>
+          </div>
+        </div>
+        <div class="hero-visual" role="img" aria-label="صورة تعليمية لطلاب وكتب"></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-image" role="img" aria-label="كتب ومراجع دراسية"></div>
+        <div class="about-copy">
+          <p class="eyebrow" style="color:var(--gold-dark)">منهج واضح وخطوات ثابتة</p>
+          <h2>عن عبدالرحمن هويدي</h2>
+          <p>هدفي إن الطالب يفهم المعلومة ويعرف يطبقها، مش مجرد يحفظها. بنقسم المنهج إلى أجزاء واضحة، ونراجع أهم النقاط، ونتدرب على الأسئلة بصورة منظمة.</p>
+          <a class="btn btn-navy" href="#contact">تواصل معايا ↩</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon">◎</div><h3>خبرة واهتمام</h3><p>شرح يراعي اختلاف مستويات الطلاب واحتياجاتهم.</p></article>
+          <article class="feature-card"><div class="feature-icon">▤</div><h3>متابعة وتقييم دوري</h3><p>مراجعة مستمرة لمعرفة نقاط القوة وما يحتاج إلى تحسين.</p></article>
+          <article class="feature-card"><div class="feature-icon">◷</div><h3>مرونة في المواعيد</h3><p>تنظيم مواعيد الحصص بما يناسب الطالب.</p></article>
+          <article class="feature-card"><div class="feature-icon">⚑</div><h3>أسلوب تدريسي مميز</h3><p>فهم الفكرة وربط المعلومات بدلًا من الاعتماد على الحفظ فقط.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="subjects" id="subjects">
+      <div class="container">
+        <div class="section-heading"><h2>المواد الدراسية</h2><p>نفهم كل جزء من المنهج خطوة بخطوة</p></div>
+        <div class="subject-grid">
+          <article class="subject-card"><div class="feature-icon">▦</div><h3>التاريخ</h3><p>فهم الأحداث التاريخية وربط الأسباب بالنتائج بطريقة سهلة.</p></article>
+          <article class="subject-card"><div class="feature-icon">◎</div><h3>الجغرافيا</h3><p>شرح الخرائط والظواهر الجغرافية وتطبيقات المنهج.</p></article>
+          <article class="subject-card"><div class="feature-icon">⌂</div><h3>التربية الوطنية</h3><p>تبسيط المفاهيم والمصطلحات المهمة في المنهج.</p></article>
+          <article class="subject-card"><div class="feature-icon">▥</div><h3>مراجعات وامتحانات</h3><p>تدريب على الأسئلة ومراجعة النقاط الأساسية قبل الامتحان.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading"><h2>تواصل معايا</h2><p>للاستفسار عن الصفوف والمواعيد أو حجز حصة</p></div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item"><span>☎</span><div><strong>اتصل بنا</strong><small>أضف رقم الهاتف هنا</small></div></div>
+            <div class="contact-item"><span>◉</span><div><strong>واتساب</strong><small>أضف رقم واتساب هنا</small></div></div>
+            <div class="contact-item"><span>⌖</span><div><strong>مكان الحصص</strong><small>أضف المنطقة أو تفاصيل الحصص أونلاين</small></div></div>
+          </div>
+          <form class="contact-form" id="booking-form">
+            <h3>اطلب حجز حصة</h3>
+            <div class="form-row">
+              <input id="student-name" name="student-name" placeholder="اسم الطالب" required>
+              <input id="student-phone" name="student-phone" type="tel" placeholder="رقم الطالب" required>
+            </div>
+            <div class="form-row">
+              <select id="grade" name="grade" required>
+                <option value="">اختر الصف الدراسي</option>
+                <option>صف رابع ابتدائي</option>
+                <option>صف الخامس ابتدائي</option>
+                <option>صف السادس ابتدائي</option>
+                <option>صف الاول اعدادي</option>
+                <option>صف الثاني اعدادي</option>
+                <option>الصف الثالث اعدادي</option>
+              </select>
+              <select id="lesson-type" name="lesson-type" required>
+                <option value="">نوع الحصة</option>
+                <option>في مقر الدرس</option>
+                <option>أونلاين</option>
+                <option>أستفسر أولًا</option>
+              </select>
+            </div>
+            <textarea id="message" name="message" placeholder="رسالة إضافية (اختياري)"></textarea>
+            <button class="btn btn-gold" type="submit">إرسال طلب الحجز عبر واتساب</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> عبدالرحمن الهويدي — جميع الحقوق محفوظة</span>
+      <span>معًا نحو فهم أفضل وتفوق مستمر</span>
+    </div>
+  </footer>
+  <a class="whatsapp-float" id="whatsapp-link" href="#contact" aria-label="تواصل عبر واتساب" title="تواصل عبر واتساب">◉</a>
+<script>
+  const WHATSAPP_NUMBER = "201060320673";
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const waLink = document.getElementById("whatsapp-link");
+    waLink.href = `https://wa.me/${WHATSAPP_NUMBER}`;
+    waLink.target = "_blank";
+    waLink.rel = "noopener noreferrer";
+
+    document.getElementById("booking-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const studentName = document.getElementById("student-name").value.trim();
+      const studentPhone = document.getElementById("student-phone").value.trim();
+      const grade = document.getElementById("grade").value;
+      const lessonType = document.getElementById("lesson-type").value;
+      const message = document.getElementById("message").value.trim();
+
+      if (WHATSAPP_NUMBER === "201000000000") {
+        alert("قبل استخدام الحجز، افتح ملف index.html وابحث عن WHATSAPP_NUMBER وضع رقم واتساب المدرس الحقيقي.");
+        return;
+      }
+
+      const text = [
+        "السلام عليكم أستاذ عبدالرحمن الهويدي، أريد الاستفسار عن حجز حصة.",
+        `اسم الطالب: ${studentName}`,
+        `رقم التواصل: ${studentPhone}`,
+        `الصف الدراسي: ${grade}`,
+        message ? `رسالة إضافية: ${message}` : ""
+      ].filter(Boolean).join("\n");
+
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
+    });
+</script>
+</body>
+</html>
